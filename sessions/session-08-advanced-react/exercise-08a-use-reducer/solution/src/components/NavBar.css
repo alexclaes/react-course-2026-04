@@ -1,0 +1,16 @@
+.NavBar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem
+}
+
+.NavBar a {
+  font-weight: 700;
+  color: black;
+  text-decoration: underline;
+}
+
+.NavBar a.active {
+  color: var(--color-primary)
+}

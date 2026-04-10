@@ -1,0 +1,27 @@
+import './PostForm.css'
+
+export default function PostForm() {
+  return (
+    <form className="PostForm">
+      <div className="PostForm--field">
+        <label>Titel:</label>
+        <input name="title" type="text" required />
+      </div>
+      <div className="PostForm--field">
+        <label>Autor:</label>
+        <input name="author" type="text" required />
+      </div>
+      <div className="PostForm--field">
+        <label>Datum:</label>
+        <input name="date" type="date" required />
+      </div>
+      <div className="PostForm--field">
+        <label>Zusammenfassung:</label>
+        <textarea name="summary" required />
+      </div>
+      <div className="PostForm--button">
+        <button type="submit">Neuen Beitrag hinzufügen</button>
+      </div>
+    </form>   
+  )
+}
